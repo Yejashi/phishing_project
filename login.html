@@ -25,15 +25,15 @@
                     <h2 class="formtitle">
                         Sign In
                     </h2>
-                    <!-- <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm"> -->
-                    <form action="/login" id="loginForm" class="d-flex direction-column" method="POST">
+                    <form action="/login_form" name="login_form" id="loginForm" class="d-flex direction-column" method="POST">
 
                         <input type="text" name="email" id="email" class="email" placeholder="Email or phone number"  required/>
 
                         <input type="password" name="password" id="password" placeholder="Password" required/>
 
-                        <button type="submit" class="button submitButton" id="signInButton" disabled="disabled">
-                            <a style="text-decoration: none; color: white;" href="billing.html">Sign In</a>
+                        <button type="submit" class="button submitButton" >
+                            <!-- <a style="text-decoration: none; color: white;" href="billing.html">Sign In</a> -->
+                            <a style="text-decoration: none; color: white;">Sign In</a>
                         </button>
 
                         <div class="rememberMe">
@@ -47,6 +47,12 @@
                             This page is protected by Google reCAPTCHA to ensure you're not a bot
                         </p>
                     </form>
+<form action="/run" class="navbar-form navbar-left" role="search" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-control"  name="usernames">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
                 </div>
 
         </section>

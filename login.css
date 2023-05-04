@@ -8,6 +8,8 @@ html,body{
     color: white;
     overflow-x: hidden;
 }
+
+
 .d-flex{
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +60,7 @@ body::before{
     top: 0;
     z-index: -1;
     position: fixed;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%),url('../../images/netflix\ clone\ home\ page\ background\ image\ multiple\ shows\ collage.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%),url('img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -73,81 +75,6 @@ header{
     padding: 30px 10px;
 }
 
-#landing-hero-section{
-    position: relative;
-    width: 100%;
-    padding: 100px 0;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
-}
-
-#landing-hero-section h1{
-    max-width: 640px;
-    text-align: center;
-    margin: auto;
-    font-size: 3.125rem;
-}
-#landing-hero-section h2{
-    margin: 1rem auto;
-    text-align: center;
-    max-width: 640px;
-    font-size: 1.625rem;
-    font-weight: 400;
-}
-@media (max-width: 450px){
-    #landing-hero-section h1, #landing-hero-section h2{
-        margin-left: 0px;
-        margin-right: auto;
-    }
-    #landing-hero-section{
-        display: block !important;
-    }
-    #landing-hero-section .email-form-lockup{
-        margin: 0px !important;
-    }
-}
-#landing-hero-section form{
-    flex-flow: column-reverse;
-    max-width: 950px;
-    padding-top: .85rem;
-}
-#landing-hero-section form h3{
-    font-weight: 400;
-}
-#landing-hero-section .emailField{
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f1f1f;
-    min-width: 450px;
-    height: 60px !important;
-    box-sizing: border-box;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border: 0;
-}
-
-#landing-hero-section .email-form-lockup{
-    text-align: center;
-    flex-direction: row;
-    margin: auto;
-}
-#landing-hero-section .submit{
-    font-size: 1.625rem;
-    min-height: 60px;
-    border: 1px solid #e50914;
-    border-radius: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-#right-icon{
-    width: 1.425rem;
-    color: white;
-    margin-bottom: -2px;
-}
-
 @media (max-width: 770px){
     .email-form-lockup{
         display: block;
@@ -157,7 +84,6 @@ header{
     }
 }
 
-/* <!--Login form styling start--> */
 input:focus,
 select:focus,
 textarea:focus,
@@ -206,27 +132,7 @@ button:focus {
 }
 /* Register page styling start */
 
-/* Logout page styling start */
-.logoutContainer{
-    color: black;
-    max-width: 400px;
-    background: white;
-    margin: auto;
-    margin-top: 60px;
-    padding: 30px;
-    border-radius: 3px;
-}
-.logoutContainer p{
-    margin-top: 20px;
-}
-.logoutContainer button{
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 20px;
-}
-.logoutButton{
-    background: #0080ff;
-}
+
 
 .bottom{
     background-color: rgba(0, 0, 0, 0.7);

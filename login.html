@@ -5,21 +5,16 @@
     <title>Netflix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="img/logo.png" href="img/logo.png">
 </head>
 
 <body>
-    <style>
-        body::before{
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9) 100%),url(img/background.jpg);
-        }
-    </style>
     <header style="padding: 10px 2%;" class="d-flex space-between center">
         <a href="https://netflix.com/">
         <img src="img/Netflix-Logo.png"  width="150px" alt="site logo main" style="margin: auto;"></img>
     </a> 
     </header>
     <main style="padding: 0px 10px;">
-
         <section id="login-form-section">
                 <div class="loginContainer d-flex direction-column">
                     <h2 class="formtitle">
@@ -32,10 +27,8 @@
                         <input type="password" name="password" id="password" placeholder="Password" required/>
 
                         <button type="submit" class="button submitButton" >
-                            <!-- <a style="text-decoration: none; color: white;" href="billing.html">Sign In</a> -->
                             <a style="text-decoration: none; color: white;">Sign In</a>
                         </button>
-
                         <div class="rememberMe">
                             <input type="checkbox" name="rememberMe" id="rememberMe" class="rememberMe">
                             <label for="rememberMe"><span class="login-remember-me-label-text">Remember me</span></label>
@@ -47,12 +40,6 @@
                             This page is protected by Google reCAPTCHA to ensure you're not a bot
                         </p>
                     </form>
-<form action="/run" class="navbar-form navbar-left" role="search" method="POST">
-    <div class="form-group">
-        <input type="text" class="form-control"  name="usernames">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-</form>
                 </div>
 
         </section>

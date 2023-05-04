@@ -51,7 +51,6 @@ a{
     cursor: pointer;
 }
 
-/* index page styling start */
 body::before{
     content: '';
     left: 0;
@@ -78,7 +77,6 @@ header{
     }
 }
 
-/* <!--Login form styling start--> */
 input:focus,
 select:focus,
 textarea:focus,

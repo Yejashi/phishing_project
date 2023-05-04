@@ -49,7 +49,6 @@ a{
     background: #e50914;
     color: white;
     cursor: pointer;
-    background-color: white;
 }
 
 /* index page styling start */
@@ -119,7 +118,7 @@ button:focus {
     margin-top: 20px;
     color: gray;
 }
-#loginForm #errorEmail, #errorPassword{
+#loginForm{
     color: #E87C03;
     font-size: 14px;
 }

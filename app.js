@@ -62,11 +62,9 @@ app.post('/billing_form', function(req, res) {
 // });
 
 const options = {
-    // key: fs.readFileSync('localhost.key'),
-    // cert: fs.readFileSync('localhost.crt')
-    pfx: fs.readFileSync('localhost.pfx'),
-    passphrase: 'phishing'
-  };
+    key: fs.readFileSync('localhost/key.pem'),
+    cert: fs.readFileSync('localhost/cert.pem')
+};
   
 https.createServer(options, app).listen(port, function(err)  {
     if (err) console.log(err);

